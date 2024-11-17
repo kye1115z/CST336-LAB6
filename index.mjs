@@ -9,7 +9,7 @@ app.use(express.static("public"));
 const pool = mysql.createPool({
   host: "3.133.12.47",
   user: "yeeun",
-  // password: "Cst-336",
+  password: "cst336",
   database: "quote_app",
   connectionLimit: 10,
   waitForConnections: true,
