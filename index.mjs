@@ -110,6 +110,6 @@ app.get("/dbTest", async (req, res) => {
   res.send(rows);
 }); //dbTest
 
-app.listen(10040, () => {
+app.listen(10040, "0.0.0.0", () => {
   console.log("Express server running");
 });
