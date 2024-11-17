@@ -39,7 +39,6 @@ app.get("/api/author/:authorId", async (req, res) => {
   let sql = `SELECT * FROM authors WHERE authorId = ?`;
   let sqlParams = [authorId];
   const [rows] = await conn.query(sql, sqlParams);
-  console.log(rows);
   res.send(rows);
 });
 
